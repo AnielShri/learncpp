@@ -1,0 +1,4 @@
+llvm-mingw-20220323-ucrt-x86_64/
+MinGW64/
+*.zip
+*.exe

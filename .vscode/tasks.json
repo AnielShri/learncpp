@@ -1,0 +1,59 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "C/C++: clang++ build active file",
+			"detail": "Build with clang++",
+			"type": "shell",
+			"command": "${workspaceFolder}\\llvm-mingw-20220323-ucrt-x86_64\\bin\\clang++.exe",
+			"args": [
+				"-std=c++17",
+				"-stdlib=libc++",
+				"-g",
+				"${file}",
+				"-o",
+				"${workspaceFolder}\\debug\\application.exe",
+				"-static",
+				"-fdiagnostics-color=always",
+				"-pedantic-errors",
+				"-Wall",
+				"-Weffc++",
+				"-Wextra",
+				"-Wsign-conversion",
+				"-Werror"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build"
+			}
+		},
+		{
+			"label": "Build and launch",
+			"detail": "Build with clang++ and lauch in dedicated terminal",
+			"dependsOn": "C/C++: clang++ build active file",
+			"dependsOrder": "sequence",
+			"type": "shell",
+			"command": "${workspaceFolder}\\debug\\application.exe",
+			"problemMatcher": [
+				"$gcc"
+			],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": true,
+				"panel": "dedicated",
+				"showReuseMessage": true,
+				"clear": false
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": true // use CTRL+SHIFT+B to launch
+			},
+		},
+	]
+}

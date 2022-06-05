@@ -1,0 +1,41 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "C/C++: clang++ build and debug active file",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${workspaceFolder}\\debug\\application.exe",
+			"args": [],
+			"stopAtEntry": false,
+			"cwd": "${fileDirname}",
+			"externalConsole": true,
+			"MIMode": "lldb",
+			"miDebuggerPath": "${workspaceFolder}\\llvm-mingw-20220323-ucrt-x86_64\\bin\\lldb-mi.exe",
+			"preLaunchTask": "C/C++: clang++ build active file",
+			"internalConsoleOptions": "openOnSessionStart",
+			"targetArchitecture": "x64",
+			"environment": [
+				{
+					"name": "Path",
+					"value": "${env:Path};${workspaceFolder}\\llvm-mingw-20220323-ucrt-x86_64\\x86_64-w64-mingw32\\bin;${workspaceFolder}\\llvm-mingw-20220323-ucrt-x86_64\\bin"
+				}
+			],
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			],
+			"logging": {
+				"engineLogging": false,
+				"trace": false,
+				"traceResponse": false,
+				"exceptions": true,
+				"moduleLoad": false,
+				"programOutput": true // we only want to see the program output
+			},
+		},
+	]
+}
