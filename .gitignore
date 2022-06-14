@@ -1,7 +1,8 @@
+# local files
 llvm-mingw-20220323-ucrt-x86_64/
 MinGW64/
-*.zip
-*.exe
+winlibs-x86_64-posix-seh-gcc-12.1.0-mingw-w64ucrt-10.0.0-r2/
+
 # Prerequisites
 *.d
 
@@ -34,7 +35,6 @@ MinGW64/
 *.exe
 *.out
 *.app
-llvm-mingw-20220323-ucrt-x86_64/
-MinGW64/
 *.zip
 *.exe
+*.7z

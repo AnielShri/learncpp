@@ -2,6 +2,36 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
+			"label": "C/C++: g++.exe build active file",
+			"detail": "Build with clang++",
+			"type": "shell",
+			"command": "${workspaceFolder}\\winlibs-x86_64-posix-seh-gcc-12.1.0-mingw-w64ucrt-10.0.0-r2\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-std=c++17",
+				"-g",
+				"${file}",
+				"-o",
+				"${workspaceFolder}\\debug\\application.exe",
+				"-static",
+				"-fdiagnostics-color=always",
+				"-pedantic-errors",
+				"-Wall",
+				"-Weffc++",
+				"-Wextra",
+				"-Wsign-conversion",
+				"-Werror"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build"
+			},
+		},
+		{
 			"label": "C/C++: clang++ build active file",
 			"detail": "Build with clang++",
 			"type": "shell",
@@ -30,7 +60,15 @@
 			],
 			"group": {
 				"kind": "build"
-			}
+			},
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": true,
+				"panel": "dedicated",
+				"showReuseMessage": true,
+				"clear": false
+			},
 		},
 		{
 			"label": "Build and launch",

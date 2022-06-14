@@ -10,6 +10,7 @@ int main()
 	width = 7; // change value stored in variable width to 7
 
 	// variable width now has value 7
+	std::cout << width << std::endl;
 
 	return 0;
 }
