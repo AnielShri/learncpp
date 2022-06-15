@@ -13,7 +13,7 @@
 			"environment": [],
 			"externalConsole": false,
 			"MIMode": "gdb",
-			"miDebuggerPath": "${workspaceFolder}\\winlibs-x86_64-posix-seh-gcc-12.1.0-mingw-w64ucrt-10.0.0-r2\\mingw64\\bin\\gdb.exe",
+			"miDebuggerPath": "${workspaceFolder}\\gcc-v12.1.0-mingw-v10.0.0-x86_64\\bin\\gdb.exe",
 			"setupCommands": [
 				{
 					"description": "Enable pretty-printing for gdb",

@@ -5,7 +5,7 @@
 			"label": "C/C++: g++.exe build active file",
 			"detail": "Build with clang++",
 			"type": "shell",
-			"command": "${workspaceFolder}\\winlibs-x86_64-posix-seh-gcc-12.1.0-mingw-w64ucrt-10.0.0-r2\\mingw64\\bin\\g++.exe",
+			"command": "${workspaceFolder}\\gcc-v12.1.0-mingw-v10.0.0-x86_64\\bin\\g++.exe",
 			"args": [
 				"-std=c++17",
 				"-g",
