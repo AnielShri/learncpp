@@ -3,6 +3,7 @@
         {
             "name": "Win32",
             "includePath": [
+                "${default}",
                 "${workspaceFolder}/**"
             ],
             "defines": [
@@ -10,25 +11,9 @@
                 "UNICODE",
                 "_UNICODE"
             ],
-            "cStandard": "c17",
-            "cppStandard": "c++17",
+            "compilerPath": "${workspaceFolder}/toolchain/gcc-mingw/bin/g++.exe",
             "intelliSenseMode": "windows-gcc-x64",
-            "compilerPath": "${workspaceFolder}\\llvm-mingw-20220323-ucrt-x86_64\\bin\\g++.exe"
-        },
-        {
-            "name": "llvm build",
-            "includePath": [
-                "${workspaceFolder}/**"
-            ],
-            "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
-            ],
-            "cStandard": "c17",
-            "cppStandard": "c++17",
-            "intelliSenseMode": "windows-clang-x64",
-            "compilerPath": "${workspaceFolder}\\llvm-mingw-20220323-ucrt-x86_64\\bin\\clang++.exe"
+            "cppStandard": "c++17"
         }
     ],
     "version": 4

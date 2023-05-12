@@ -1,7 +1,3 @@
-# local files
-llvm-mingw-20220323-ucrt-x86_64/
-gcc-v12.1.0-mingw-v10.0.0-x86_64/
-
 # Prerequisites
 *.d
 
@@ -37,3 +33,6 @@ gcc-v12.1.0-mingw-v10.0.0-x86_64/
 *.zip
 *.exe
 *.7z
+
+# Toolchain
+toolchain/

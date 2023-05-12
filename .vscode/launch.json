@@ -1,4 +1,7 @@
 {
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
 	"version": "0.2.0",
 	"configurations": [
 		{
@@ -13,7 +16,7 @@
 			"environment": [],
 			"externalConsole": false,
 			"MIMode": "gdb",
-			"miDebuggerPath": "${workspaceFolder}\\gcc-v12.1.0-mingw-v10.0.0-x86_64\\bin\\gdb.exe",
+			"miDebuggerPath": "${workspaceFolder}\\toolchain\\gcc-mingw\\bin\\gdb.exe",
 			"setupCommands": [
 				{
 					"description": "Enable pretty-printing for gdb",
@@ -21,35 +24,6 @@
 					"ignoreFailures": true,
 				}
 			],
-		},
-		{
-			"name": "C/C++: clang++ build and debug active file",
-			"type": "cppdbg",
-			"request": "launch",
-			"program": "${workspaceFolder}\\debug\\application.exe",
-			"args": [],
-			"stopAtEntry": false,
-			"cwd": "${fileDirname}",
-			"externalConsole": false,
-			"MIMode": "lldb",
-			"miDebuggerPath": "${workspaceFolder}\\llvm-mingw-20220323-ucrt-x86_64\\bin\\lldb-mi.exe",
-			"preLaunchTask": "C/C++: clang++ build active file",
-			"internalConsoleOptions": "openOnSessionStart",
-			"setupCommands": [
-				{
-					"description": "Enable pretty-printing for gdb",
-					"text": "-enable-pretty-printing",
-					"ignoreFailures": true
-				}
-			],
-			"logging": {
-				"engineLogging": false,
-				"trace": false,
-				"traceResponse": false,
-				"exceptions": true,
-				"moduleLoad": false,
-				"programOutput": true // we only want to see the program output
-			},
-		},
+		},		
 	]
 }

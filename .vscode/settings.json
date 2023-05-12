@@ -1,7 +1,0 @@
-{
-    "C_Cpp.default.compilerPath": "${workspaceFolder}\\llvm-mingw-20220323-ucrt-x86_64\\bin",
-    "debug.onTaskErrors": "abort",
-    "terminal.integrated.env.windows": {
-    "PATH": "${env:PATH};${workspaceFolder}\\llvm-mingw-20220323-ucrt-x86_64\\bin"
-    },
-}
