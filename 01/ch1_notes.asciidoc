@@ -1,0 +1,7 @@
+= Chapter 1 - Basics
+
+== 1.7 naming conventions
+
+* Variables: lower case + snake case
+* Functions: lower case + snake case
+* User-defined types (such as structs, classes, and enumerations): start with capital
